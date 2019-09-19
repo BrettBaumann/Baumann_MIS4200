@@ -18,7 +18,8 @@ namespace baumann_MIS4200.Controllers
         // GET: Appointments
         public ActionResult Index()
         {
-            return View(db.Appointment.ToList());
+            var appointment = db.Appointment.Include(a => a.automobiles);
+            return View(appointment.ToList());
         }
 
         // GET: Appointments/Details/5
@@ -39,6 +40,7 @@ namespace baumann_MIS4200.Controllers
         // GET: Appointments/Create
         public ActionResult Create()
         {
+            ViewBag.automobileID = new SelectList(db.AutomobileInfo, "automobileID", "make");
             return View();
         }
 
@@ -47,7 +49,7 @@ namespace baumann_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "appointmentID,description,dateServiced,totalCost")] Appointment appointment)
+        public ActionResult Create([Bind(Include = "appointmentID,description,dateServiced,totalCost,automobileID")] Appointment appointment)
         {
             if (ModelState.IsValid)
             {
@@ -56,6 +58,7 @@ namespace baumann_MIS4200.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.automobileID = new SelectList(db.AutomobileInfo, "automobileID", "make", appointment.automobileID);
             return View(appointment);
         }
 
@@ -71,6 +74,7 @@ namespace baumann_MIS4200.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.automobileID = new SelectList(db.AutomobileInfo, "automobileID", "make", appointment.automobileID);
             return View(appointment);
         }
 
@@ -79,7 +83,7 @@ namespace baumann_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "appointmentID,description,dateServiced,totalCost")] Appointment appointment)
+        public ActionResult Edit([Bind(Include = "appointmentID,description,dateServiced,totalCost,automobileID")] Appointment appointment)
         {
             if (ModelState.IsValid)
             {
@@ -87,6 +91,7 @@ namespace baumann_MIS4200.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.automobileID = new SelectList(db.AutomobileInfo, "automobileID", "make", appointment.automobileID);
             return View(appointment);
         }
 
