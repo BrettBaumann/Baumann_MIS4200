@@ -177,6 +177,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\MISContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Automobile.cs" />
@@ -243,16 +244,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Automobiles\Create.cshtml" />
-    <Content Include="Views\Automobiles\Delete.cshtml" />
-    <Content Include="Views\Automobiles\Details.cshtml" />
-    <Content Include="Views\Automobiles\Edit.cshtml" />
-    <Content Include="Views\Automobiles\Index.cshtml" />
     <Content Include="Views\Appointments\Create.cshtml" />
     <Content Include="Views\Appointments\Delete.cshtml" />
     <Content Include="Views\Appointments\Details.cshtml" />
     <Content Include="Views\Appointments\Edit.cshtml" />
     <Content Include="Views\Appointments\Index.cshtml" />
+    <Content Include="Views\Automobiles\Create.cshtml" />
+    <Content Include="Views\Automobiles\Delete.cshtml" />
+    <Content Include="Views\Automobiles\Details.cshtml" />
+    <Content Include="Views\Automobiles\Edit.cshtml" />
+    <Content Include="Views\Automobiles\Index.cshtml" />
     <Content Include="Views\Technicians\Create.cshtml" />
     <Content Include="Views\Technicians\Delete.cshtml" />
     <Content Include="Views\Technicians\Details.cshtml" />
