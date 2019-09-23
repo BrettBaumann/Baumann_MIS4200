@@ -249,16 +249,16 @@
     <Content Include="Views\Automobiles\Details.cshtml" />
     <Content Include="Views\Automobiles\Edit.cshtml" />
     <Content Include="Views\Automobiles\Index.cshtml" />
-    <Content Include="Views\Technicians\Create.cshtml" />
-    <Content Include="Views\Technicians\Delete.cshtml" />
-    <Content Include="Views\Technicians\Details.cshtml" />
-    <Content Include="Views\Technicians\Edit.cshtml" />
-    <Content Include="Views\Technicians\Index.cshtml" />
     <Content Include="Views\Appointments\Create.cshtml" />
     <Content Include="Views\Appointments\Delete.cshtml" />
     <Content Include="Views\Appointments\Details.cshtml" />
     <Content Include="Views\Appointments\Edit.cshtml" />
     <Content Include="Views\Appointments\Index.cshtml" />
+    <Content Include="Views\Technicians\Create.cshtml" />
+    <Content Include="Views\Technicians\Delete.cshtml" />
+    <Content Include="Views\Technicians\Details.cshtml" />
+    <Content Include="Views\Technicians\Edit.cshtml" />
+    <Content Include="Views\Technicians\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

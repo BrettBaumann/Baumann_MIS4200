@@ -12,6 +12,7 @@ namespace baumann_MIS4200.Migrations.MISContext
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
             ContextKey = "baumann_MIS4200.DAL.MIS4200Context";
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(baumann_MIS4200.DAL.MIS4200Context context)
