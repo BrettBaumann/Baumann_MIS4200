@@ -18,7 +18,7 @@ namespace baumann_MIS4200.Controllers
         // GET: Appointments
         public ActionResult Index()
         {
-            var appointment = db.Appointment.Include(a => a.automobiles).Include(a => a.technicians);
+            var appointment = db.Appointment.Include(a => a.Automobiles).Include(a => a.technicians);
             return View(appointment.ToList());
         }
 

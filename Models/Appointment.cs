@@ -18,7 +18,7 @@ namespace baumann_MIS4200.Models
 
 
         public int automobileID { get; set; }
-        public virtual Automobile automobiles { get; set; }
+        public virtual Automobile Automobiles { get; set; }
 
     }
 }
