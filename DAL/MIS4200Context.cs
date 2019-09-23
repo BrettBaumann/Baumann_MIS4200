@@ -18,7 +18,6 @@ namespace baumann_MIS4200.DAL
         // Include each object here. The value inside <> is the name of the class,
         // the value outside should generally be the plural of the class name
         // and is the name used to reference the entity in code
-
         public DbSet<Technician> TechnicianDetail { get; set; }
         public DbSet<Automobile> AutomobileInfo { get; set; }
         public DbSet<Appointment> Appointment { get; set; }
@@ -27,9 +26,6 @@ namespace baumann_MIS4200.DAL
         {
             base.OnModelCreating(modelBuilder);
         }
-
-
-
-
     }
+
 }
