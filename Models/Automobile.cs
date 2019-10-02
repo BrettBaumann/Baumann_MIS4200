@@ -13,7 +13,7 @@ namespace baumann_MIS4200.Models
         public string model { get; set; }
         public int year { get; set; }
 
-        public ICollection<Appointment> Appointment { get; set; }
+        public ICollection<Appointment> Appointments { get; set; }
 
 
     }
