@@ -14,19 +14,19 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Brett Baumann", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-            @Html.Partial("_LoginPartial")
-        </div>
+                    <li><a href="https://aspnet.cob.ohio.edu/bb703914/"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="https://aspnet.cob.ohio.edu/bb703914/Home/About"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+                    <li><a href="https://aspnet.cob.ohio.edu/bb703914/Home/Contact"><span class="glyphicon glyphicon-phone-alt"></span></a></li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
         </div>
     </div>
     <div class="container body-content">
