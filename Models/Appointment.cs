@@ -19,7 +19,7 @@ namespace baumann_MIS4200.Models
 
         [Display(Name = "Date Serviced")]
         [Required(ErrorMessage = "Date of service is required")]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         public DateTime dateServiced { get; set; }
 
         [Display(Name = "Total Cost")]
